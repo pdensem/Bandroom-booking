@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Bandroom Booking</title>\
+    <link rel="stylesheet" href="styles.css">\
+</head>\
+<body>\
+\
+    <header>\
+        <h1>Bandroom Booking System</h1>\
+        <p>Book your slot for the Big Band Room or Small Band Room.</p>\
+    </header>\
+\
+    <main>\
+        <section id="booking-form">\
+            <h2>Make a Booking</h2>\
+            <form id="form">\
+                <label for="fullName">Full Name:</label>\
+                <input type="text" id="fullName" name="fullName" required>\
+\
+                <label for="bandName">Band Name:</label>\
+                <input type="text" id="bandName" name="bandName" required>\
+\
+                <label for="room">Select Room:</label>\
+                <select id="room" name="room" required>\
+                    <option value="Big Band Room">Big Band Room</option>\
+                    <option value="Small Band Room">Small Band Room</option>\
+                </select>\
+\
+                <label for="date">Select Date:</label>\
+                <input type="date" id="date" name="date" required>\
+\
+                <label for="time">Select Time Slot:</label>\
+                <select id="time" name="time" required>\
+                    <!-- Time slots will be dynamically filled by script.js -->\
+                </select>\
+\
+                <button type="submit">Book Slot</button>\
+            </form>\
+        </section>\
+\
+        <section id="calendar-view">\
+            <h2>Current Bookings</h2>\
+            <div id="calendar">\
+                <!-- Booking list or calendar will be rendered here -->\
+            </div>\
+        </section>\
+    </main>\
+\
+    <footer>\
+        <p>&copy; 2025 Your School Music Department</p>\
+    </footer>\
+\
+    <script src="script.js"></script>\
+</body>\
+</html>\
+}
