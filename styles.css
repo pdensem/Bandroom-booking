@@ -5,77 +5,112 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 /* General layout */\
-body \{\
-    font-family: Arial, sans-serif;\
+\f0\fs24 \cf0 /* Reset & base */\
+* \{\
     margin: 0;\
     padding: 0;\
-    background: #f8f9fa;\
+    box-sizing: border-box;\
+\}\
+\
+body \{\
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;\
+    background: linear-gradient(120deg, #7b1fa2, #26c6da);\
     color: #333;\
+    min-height: 100vh;\
+    display: flex;\
+    flex-direction: column;\
 \}\
 \
+/* Header */\
 header \{\
-    background: #4a148c;\
+    background: rgba(0, 0, 0, 0.2);\
     color: white;\
-    padding: 1rem;\
+    padding: 1.5rem;\
     text-align: center;\
+    font-size: 1.5rem;\
+    letter-spacing: 1px;\
 \}\
 \
+/* Main container */\
 main \{\
+    flex: 1;\
     max-width: 900px;\
     margin: 2rem auto;\
-    padding: 1rem;\
+    padding: 2rem;\
     background: white;\
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);\
-    border-radius: 8px;\
+    border-radius: 12px;\
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);\
 \}\
 \
+/* Headings */\
 h1, h2 \{\
-    margin-top: 0;\
+    margin-bottom: 1rem;\
+    color: #7b1fa2;\
 \}\
 \
 /* Form styling */\
 form \{\
     display: grid;\
-    gap: 0.8rem;\
+    gap: 1rem;\
     margin-bottom: 2rem;\
 \}\
 \
-input, select, button \{\
-    padding: 0.5rem;\
+input, select \{\
+    padding: 0.6rem;\
     font-size: 1rem;\
+    border: 1px solid #ccc;\
+    border-radius: 6px;\
+    outline: none;\
+    transition: border-color 0.2s;\
 \}\
 \
+input:focus, select:focus \{\
+    border-color: #26c6da;\
+\}\
+\
+/* Buttons */\
 button \{\
-    background: #4a148c;\
+    padding: 0.7rem;\
+    font-size: 1rem;\
+    background: linear-gradient(120deg, #7b1fa2, #26c6da);\
     color: white;\
     border: none;\
+    border-radius: 6px;\
     cursor: pointer;\
+    transition: transform 0.1s, box-shadow 0.2s;\
 \}\
 \
 button:hover \{\
-    background: #6a1b9a;\
+    transform: translateY(-2px);\
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);\
 \}\
 \
-/* Calendar view */\
+/* Calendar section */\
 #calendar \{\
-    border-top: 2px solid #eee;\
-    padding-top: 1rem;\
+    border-top: 3px solid #eee;\
+    padding-top: 1.5rem;\
 \}\
 \
 .booking-item \{\
-    padding: 0.5rem;\
-    border-bottom: 1px solid #ddd;\
+    background: #f3f3f3;\
+    padding: 0.8rem;\
+    border-radius: 6px;\
+    margin-bottom: 0.6rem;\
+    display: flex;\
+    justify-content: space-between;\
+    align-items: center;\
 \}\
 \
 .booking-item strong \{\
-    color: #4a148c;\
+    color: #7b1fa2;\
 \}\
 \
+/* Footer */\
 footer \{\
     text-align: center;\
     padding: 1rem;\
-    font-size: 0.8rem;\
-    background: #eee;\
+    font-size: 0.85rem;\
+    background: rgba(0, 0, 0, 0.05);\
+    margin-top: auto;\
 \}\
 }
